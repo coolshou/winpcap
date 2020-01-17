@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug No AirPcap|Win32">
-      <Configuration>Debug No AirPcap</Configuration>
+    <ProjectConfiguration Include="Debug_No_AirPcap|Win32">
+      <Configuration>Debug_No_AirPcap</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Debug No AirPcap|x64">
-      <Configuration>Debug No AirPcap</Configuration>
+    <ProjectConfiguration Include="Debug_No_AirPcap|x64">
+      <Configuration>Debug_No_AirPcap</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Win32">
@@ -17,12 +17,12 @@
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release No AirPcap|Win32">
-      <Configuration>Release No AirPcap</Configuration>
+    <ProjectConfiguration Include="Release_No_AirPcap|Win32">
+      <Configuration>Release_No_AirPcap</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release No AirPcap|x64">
-      <Configuration>Release No AirPcap</Configuration>
+    <ProjectConfiguration Include="Release_No_AirPcap|x64">
+      <Configuration>Release_No_AirPcap</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
@@ -38,15 +38,16 @@
     <ProjectGuid>{20B438DA-CBEC-4AFF-B11C-67B301D14AD5}</ProjectGuid>
     <RootNamespace>wpcap</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release No AirPcap|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_No_AirPcap|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug No AirPcap|Win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_No_AirPcap|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
@@ -62,13 +63,13 @@
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release No AirPcap|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_No_AirPcap|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug No AirPcap|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_No_AirPcap|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
@@ -87,10 +88,10 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release No AirPcap|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_No_AirPcap|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug No AirPcap|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_No_AirPcap|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
@@ -99,10 +100,10 @@
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release No AirPcap|x64'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_No_AirPcap|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug No AirPcap|x64'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_No_AirPcap|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
@@ -116,51 +117,52 @@
     <_ProjectFileVersion>16.0.29511.113</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(ProjectDir)\$(Configuration)\x86\</OutDir>
-    <IntDir>$(ProjectDir)\$(Configuration)\x86\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(ProjectDir)\$(Configuration)\x64\</OutDir>
-    <IntDir>$(ProjectDir)\$(Configuration)\x64\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(ProjectDir)\$(Configuration)\x86\</OutDir>
-    <IntDir>$(ProjectDir)\$(Configuration)\x86\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(ProjectDir)\$(Configuration)\x64\</OutDir>
-    <IntDir>$(ProjectDir)\$(Configuration)\x64\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug No AirPcap|Win32'">
-    <OutDir>$(ProjectDir)\$(Configuration)\x86\</OutDir>
-    <IntDir>$(ProjectDir)\$(Configuration)\x86\</IntDir>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_No_AirPcap|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug No AirPcap|x64'">
-    <OutDir>$(ProjectDir)\$(Configuration)\x64\</OutDir>
-    <IntDir>$(ProjectDir)\$(Configuration)\x64\</IntDir>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_No_AirPcap|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release No AirPcap|Win32'">
-    <OutDir>$(ProjectDir)\$(Configuration)\x86\</OutDir>
-    <IntDir>$(ProjectDir)\$(Configuration)\x86\</IntDir>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_No_AirPcap|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release No AirPcap|x64'">
-    <OutDir>$(ProjectDir)\$(Configuration)\x64\</OutDir>
-    <IntDir>$(ProjectDir)\$(Configuration)\x64\</IntDir>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_No_AirPcap|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>..\..\packetNtx\Dll\Project\Release_No_NetMon\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\libpcap;..\libpcap\lbl;..\libpcap\bpf\;..\..\common;..\libpcap\win32\include;..\Win32-Extensions;..\..\..\AirPcap_DevPack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBPCAP_EXPORTS;WIN32;_DEBUG;_WINDOWS;HAVE_ADDRINFO;YY_NEVER_INTERACTIVE;yylval=pcap_lval;HAVE_STRERROR;__STDC__;INET6;SIZEOF_CHAR=1;SIZEOF_SHORT=2;SIZEOF_INT=4;WPCAP;HAVE_SNPRINTF;HAVE_VSNPRINTF;HAVE_REMOTE;HAVE_AIRPCAP_API;_U_=;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;HAVE_TC_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader />
@@ -187,7 +189,6 @@
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\libpcap;..\libpcap\lbl;..\libpcap\bpf\;..\..\common;..\libpcap\win32\include;..\Win32-Extensions;..\..\..\AirPcap_DevPack\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBPCAP_EXPORTS;WIN32;_DEBUG;_WINDOWS;HAVE_ADDRINFO;YY_NEVER_INTERACTIVE;yylval=pcap_lval;HAVE_STRERROR;__STDC__;INET6;SIZEOF_CHAR=1;SIZEOF_SHORT=2;SIZEOF_INT=4;WPCAP;HAVE_SNPRINTF;HAVE_VSNPRINTF;HAVE_REMOTE;HAVE_AIRPCAP_API;_U_=;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;HAVE_TC_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader />
@@ -249,12 +250,11 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug No AirPcap|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_No_AirPcap|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\libpcap;..\libpcap\lbl;..\libpcap\bpf\;..\..\common;..\libpcap\win32\include;..\Win32-Extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBPCAP_EXPORTS;WIN32;_DEBUG;_WINDOWS;HAVE_ADDRINFO;YY_NEVER_INTERACTIVE;yylval=pcap_lval;HAVE_STRERROR;__STDC__;INET6;SIZEOF_CHAR=1;SIZEOF_SHORT=2;SIZEOF_INT=4;WPCAP;HAVE_SNPRINTF;HAVE_VSNPRINTF;HAVE_REMOTE;_U_=;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;HAVE_TC_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader />
@@ -273,7 +273,7 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug No AirPcap|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_No_AirPcap|x64'">
     <Midl>
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
@@ -281,7 +281,6 @@
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\libpcap;..\libpcap\lbl;..\libpcap\bpf\;..\..\common;..\libpcap\win32\include;..\Win32-Extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBPCAP_EXPORTS;WIN32;_DEBUG;_WINDOWS;HAVE_ADDRINFO;YY_NEVER_INTERACTIVE;yylval=pcap_lval;HAVE_STRERROR;__STDC__;INET6;SIZEOF_CHAR=1;SIZEOF_SHORT=2;SIZEOF_INT=4;WPCAP;HAVE_SNPRINTF;HAVE_VSNPRINTF;HAVE_REMOTE;_U_=;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;HAVE_TC_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader />
@@ -298,7 +297,7 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release No AirPcap|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_No_AirPcap|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\libpcap;..\libpcap\lbl;..\libpcap\bpf\;..\..\common;..\libpcap\win32\include;..\Win32-Extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>LIBPCAP_EXPORTS;WIN32;NDEBUG;_WINDOWS;HAVE_ADDRINFO;YY_NEVER_INTERACTIVE;yylval=pcap_lval;HAVE_STRERROR;__STDC__;INET6;SIZEOF_CHAR=1;SIZEOF_SHORT=2;SIZEOF_INT=4;WPCAP;HAVE_VSNPRINTF;HAVE_REMOTE;_U_=;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;HAVE_TC_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -308,8 +307,8 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>ws2_32.lib;packet.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\packetNtx\Dll\Project\Release\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;..\..\Release_No_NetMon\x86\packet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\Release_No_NetMon\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>wpcap.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -320,7 +319,7 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release No AirPcap|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_No_AirPcap|x64'">
     <Midl>
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
@@ -334,7 +333,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>ws2_32.lib;packet.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\packetNtx\Dll\Project\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\Release_No_NetMon\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ModuleDefinitionFile>wpcap.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
